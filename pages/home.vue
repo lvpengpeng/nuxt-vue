@@ -67,9 +67,9 @@ export default {
     // })
   },
   methods:{
-      handleClick(id){
-          alert(id)
-      }
+    handleClick(id){
+        this.$router.push(`/films/${id}`)
+    }
   }
 }
 </script>
