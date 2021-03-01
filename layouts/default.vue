@@ -1,5 +1,11 @@
 <template>
   <div>
+      <div class="nav">
+          <nuxt-link to="/home" tag="a" activeClass="active" class="nav-item">首页</nuxt-link>
+          <nuxt-link to="/board" tag="a" activeClass="active" class="nav-item">榜单</nuxt-link>
+          <nuxt-link to="/news" tag="a" activeClass="active" class="nav-item">热点</nuxt-link>
+          <nuxt-link to="/edimall" tag="a" activeClass="active" class="nav-item">商场</nuxt-link>
+      </div>
     <Nuxt />
   </div>
 </template>
@@ -59,4 +65,23 @@ html {
   color: #fff;
   background-color: #35495e;
 }
+</style>
+<style lang="scss" scoped>
+    .nav{
+        width: 100%;
+        padding: 20px 40px;
+        border-bottom: 1px solid #333;
+        display: flex;
+        &-item{
+            padding: 10px 20px;
+            display:inline-block;
+        }
+        :hover{
+            color: red;
+        }
+        .active{
+            background: #ef4238;
+            color: #fff;
+        }
+    }
 </style>

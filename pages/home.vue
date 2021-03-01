@@ -1,7 +1,7 @@
 <template>
     <div class="home">
         <div class="home-banner">
-            home
+            首页
         </div>
     </div>
 </template>
@@ -14,10 +14,10 @@ export default {
 
 <style lang='scss' scoped>
 .home{
-    .home-banner{
+    &-banner{
         width: 100%;
         height: 200px;
-        background: red;
+        background: #ccc;
     }
 }
 </style>
