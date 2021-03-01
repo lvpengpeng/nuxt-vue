@@ -1,10 +1,10 @@
 <template>
-  <div v-if="looplist">电影详情id:{{$route.params.myid}}
+  <div v-if="looplist">电影详情id:{{$route.params.myid?$route.params.myid:0}}
         <div>
-            <h2>豆瓣评分：{{looplist[$route.params.myid].grade}}分</h2>
-            <p>{{looplist[$route.params.myid].title}}</p>
-            <img :src="looplist[$route.params.myid].url" >
-            <p>{{looplist[$route.params.myid].text}}</p>
+            <h2>豆瓣评分：{{looplist[$route.params.myid?$route.params.myid:0].grade}}分</h2>
+            <p>{{looplist[$route.params.myid?$route.params.myid:0].title}}</p>
+            <img :src="looplist[$route.params.myid?$route.params.myid:0].url" >
+            <p>{{looplist[$route.params.myid?$route.params.myid:0].text}}</p>
         </div>
   </div>
 </template>

@@ -12,7 +12,7 @@
 
 <style>
 html {
-  font-family:
+    font-family:
     'Source Sans Pro',
     -apple-system,
     BlinkMacSystemFont,
@@ -21,13 +21,13 @@ html {
     'Helvetica Neue',
     Arial,
     sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+    font-size: 16px;
+    word-spacing: 1px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
 }
 
 *,
@@ -65,6 +65,20 @@ html {
   color: #fff;
   background-color: #35495e;
 }
+ul,li{ padding:0;margin:0;list-style:none}
+a{
+    text-decoration: none;
+    color: inherit;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    border-bottom: none;
+    display: block;
+   }
 </style>
 <style lang="scss" scoped>
     .nav{

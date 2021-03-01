@@ -18,6 +18,7 @@
 <script>
 export default {
   asyncData() {
+    console.log(process.server);
       return {
         looplist:[
             {
