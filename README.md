@@ -1,4 +1,4 @@
-# myapp
+# my-app
 
 ## Build Setup
 
