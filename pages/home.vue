@@ -1,7 +1,11 @@
 <template>
     <div class="home">
         <div class="home-banner">
-            banner
+  <el-carousel indicator-position="outside">
+    <el-carousel-item v-for="item in 4" :key="item">
+      <h3>{{ item }}</h3>
+    </el-carousel-item>
+  </el-carousel>
         </div>
         <div class="home-center">
             <div>正在热映（{{looplist.length}}部）</div>
@@ -79,8 +83,6 @@ export default {
 .home{
     &-banner{
         width: 100%;
-        height: 200px;
-        background: #ccc;
     }
     &-center{
         padding:0 100px;
@@ -93,10 +95,24 @@ export default {
         &__item{
             width: 100px;
             min-width: 160px;
-            height: 300px;
+            // height: 300px;
             box-sizing: border-box;
             border: 1px solid red;
         }
     }
 }
+  .el-carousel__item h3 {
+    color: #475669;
+    font-size: 18px;
+    opacity: 0.75;
+    margin: 0;
+  }
+  
+  .el-carousel__item:nth-child(2n) {
+    background-color: #99a9bf;
+  }
+  
+  .el-carousel__item:nth-child(2n+1) {
+    background-color: #d3dce6;
+  }
 </style>
