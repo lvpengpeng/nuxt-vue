@@ -37,7 +37,7 @@ export default {
          if ((this.form.name==123)&&(this.form.password==123)) {
               this.$store.commit('filter/setlogin',true)
              this.$router.push({
-                 path:`/films/${this.$route.query.id}`
+                 path:`/films/${this.$route.query.id?this.$route.query.id:0}`
              })
          }
       },
